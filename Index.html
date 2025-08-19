@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> My Hobby-Programing</title>
     <style>
+    body {
+        background-color: purple ;
+    }
      h1{
            font-style: inherit;
+           text-align: center;
+
+        }
+        h2{
+            text-align: center;
         }
     footer {
-      /* background: #0a0f1c; */
+      
       text-align: center;
       padding: 30px 20px;
-      /* border-top: 1px solid #1f2a48; */
-      font-size: 0.9rem;
+      margin: 10px 0;
+      font-size: 18px;
     }
     .Grid{
         display:grid;
@@ -27,20 +35,50 @@
         width: 300px;
         border-radius: 2px;
     }
+    .container{
+        max-width: 100%;
+        margin:20px;
+        background: white;
+      
+        
+    }
+    button{
+        display: block;
+        margin: 0 auto;
+        background: white;
+        font-size: 20px;
+        transition: all 150ms ease-in-out;
+        border-radius: 6px;
+
+    }
+    button:hover{
+        background: rgb(138, 90, 138);
+        cursor: pointer;
+    }
+    .theme-button{
+        font-size: 18px;
+        background: black;
+        color: white;
+        padding: 5 8px;
+    }
+    .theme-button:hover{
+        color: black;
+        background: white;
+    }
 
     </style>
     
 </head>
 <body>
-    <button>Dark Theme</button>
+    <button class = "theme-button">Dark Theme</button>
+    <div class = "container">
     <h1>Coding</h1>
-    <h2> I Realy love Coding and Programing</h2>
+    <h2> 💻 I Realy love Coding and Programing</h2>
 
-    <p>"Tech-driven problem solver specializing in modern web and software development."
+    <p> "Tech-driven problem solver specializing in modern web and software development."
 
     </p>
-    <a href="https://github.com/Khanyi-Codes" target = 'blank'>random</a>
-    
+   
    
     <div class ="Grid">
         <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/Avengers.png?raw=true" alt="Avengers">
@@ -49,9 +87,10 @@
         <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/myCity.png?raw=true" alt = "myCity">
     </div>
      
-    
+    <a href="https://www.linkedin.com/in/khanyisile-makhubu/" target = 'blank'>Check out my Linkedin</a>
     <button>Visit my Github <a href="https://github.com/Khanyi-Codes"></a></button>
 
     <footer>Coded by Khanyisile Makhubu <a href = "https://github.com/Khanyi-Codes"></a></footer>
+</div>
 </body>
 </html>
