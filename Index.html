@@ -8,14 +8,14 @@
     body {
         background-color: purple ;
     }
-     h1{
+    h1{
            font-style: inherit;
            text-align: center;
 
-        }
-        h2{
+    }
+    h2{
             text-align: center;
-        }
+    }
     footer {
       
       text-align: center;
@@ -26,11 +26,12 @@
     .Grid{
         display:grid;
         /* size: 202px; */
-        grid-template-columns: 350px 500px;
+        grid-template-columns: 300px 500px;
         grid-gap: 10px; 
         padding: 10px;
         border-radius: 20px;
-    }      
+    }
+         
     img{
         width: 300px;
         border-radius: 2px;
@@ -39,8 +40,7 @@
         max-width: 100%;
         margin:20px;
         background: white;
-      
-        
+   
     }
     button{
         display: block;
@@ -54,6 +54,7 @@
     button:hover{
         background: rgb(138, 90, 138);
         cursor: pointer;
+        
     }
     .theme-button{
         font-size: 18px;
@@ -65,6 +66,18 @@
         color: black;
         background: white;
     }
+    .images:hover{
+        /* width: 400px; */
+        display:ruby;
+        position:fixed;
+        filter: contrast(50%);
+        transform: scale(1.4);
+    }
+    .images{
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+    }
+    
 
     </style>
     
@@ -79,12 +92,19 @@
 
     </p>
    
-   
     <div class ="Grid">
-        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/Avengers.png?raw=true" alt="Avengers">
-        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/TheGreatestShow.png?raw=true" alt="The TheGreatestShow">
-        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/Discovery.png?raw=true" alt = "Discovery">
-        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/myCity.png?raw=true" alt = "myCity">
+        <a href="https://github.com/Khanyi-Codes/Avengers-App" target = 'blank'>
+        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/Avengers.png?raw=true" alt="Avengers"  
+        class = "images">
+    </a>
+    <a href="https://github.com/Khanyi-Codes/Shecodes-Project" target = 'blank'>
+        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/TheGreatestShow.png?raw=true" alt="The TheGreatestShow" class = "images">
+        </a>
+         <a href="https://github.com/Khanyi-Codes/DiscoveriesApp" target = 'blank'>
+        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/Discovery.png?raw=true" alt = "Discovery" class = "images"></a>
+         <a href="https://github.com/Khanyi-Codes/My-City" target = 'blank'>
+        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/myCity.png?raw=true" alt = "myCity" class = "images">
+    </a>
     </div>
      
     <a href="https://www.linkedin.com/in/khanyisile-makhubu/" target = 'blank'>Check out my Linkedin</a>
