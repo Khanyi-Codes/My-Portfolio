@@ -16,6 +16,9 @@
     h2{
             text-align: center;
     }
+    p{
+        text-align: center;
+    }
     footer {
       
       text-align: center;
@@ -26,14 +29,15 @@
     .Grid{
         display:grid;
         /* size: 202px; */
-        grid-template-columns: 300px 500px;
-        grid-gap: 10px; 
+        size: 300;
+        grid-template-columns: 25% 25% 25% 25%;
+        /* grid-gap: 10px;  */
         padding: 10px;
         border-radius: 20px;
     }
          
     img{
-        width: 300px;
+        width: 90%;
         border-radius: 2px;
     }
     .container{
@@ -67,30 +71,44 @@
         background: white;
     }
     .images:hover{
-        /* width: 400px; */
-        display:ruby;
-        position:fixed;
-        filter: contrast(50%);
-        transform: scale(1.4);
+        position: center ;
+        transform: scale(1.2);
+        /* transition: filter 150ms ease-in-out; */
     }
     .images{
         border-radius: 10px;
-        transition: all 150ms ease-in-out;
+        /* transition: opacity 150ms ease-in-out; */
     }
-    
-
+    .DashBoard{
+        width: 85%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        transform: all 150ms ease-in-out;
+    }
+    .DashBoard:hover{
+        filter: contrast(80%);
+        transform:scale(1.1);
+    }
+    .linkedin{
+        margin-left: 20px;
+    }
     </style>
     
 </head>
 <body>
     <button class = "theme-button">Dark Theme</button>
     <div class = "container">
-    <h1>Coding</h1>
-    <h2> 💻 I Realy love Coding and Programing</h2>
-
-    <p> "Tech-driven problem solver specializing in modern web and software development."
+    <h1>Khanyisile Makhubu</h1>
+    <h2> Tech Stack : Java, Python, Html, Css and Java Script</h2>
+    <p> 💻 I am a software engineering student passionate about buiding applications and exploring Cyber security
 
     </p>
+    <a href="https://github.com/Khanyi-Codes" target = 'blank'>
+        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/DashBoard.png?raw=true" alt="DashBoard"  
+        class = "DashBoard">
+    </a>
    
     <div class ="Grid">
         <a href="https://github.com/Khanyi-Codes/Avengers-App" target = 'blank'>
@@ -98,19 +116,27 @@
         class = "images">
     </a>
     <a href="https://github.com/Khanyi-Codes/Shecodes-Project" target = 'blank'>
-        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/TheGreatestShow.png?raw=true" alt="The TheGreatestShow" class = "images">
+        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/TheGreatestShow.png?raw=true" alt="TheGreatestShow" class = "images">
         </a>
          <a href="https://github.com/Khanyi-Codes/DiscoveriesApp" target = 'blank'>
-        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/Discovery.png?raw=true" alt = "Discovery" class = "images"></a>
+        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/Discovery.png?raw=true" alt = "Discovery" class = "images">
+    </a>
          <a href="https://github.com/Khanyi-Codes/My-City" target = 'blank'>
-        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/myCity.png?raw=true" alt = "myCity" class = "images">
+        <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/myCity.png?raw=true" alt = "MyCity" class = "images">
     </a>
     </div>
      
-    <a href="https://www.linkedin.com/in/khanyisile-makhubu/" target = 'blank'>Check out my Linkedin</a>
+    <a href="https://www.linkedin.com/in/khanyisile-makhubu/" target = 'blank' class= "linkedin">Check out my Linkedin</a>
     <button>Visit my Github <a href="https://github.com/Khanyi-Codes"></a></button>
 
     <footer>Coded by Khanyisile Makhubu <a href = "https://github.com/Khanyi-Codes"></a></footer>
 </div>
+<script>
+    function darkTheme(){
+        let theme = document.querySelector(".theme");
+        theme.classList.add("dark")
+    }
+
+</script>
 </body>
 </html>
