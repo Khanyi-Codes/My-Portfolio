@@ -1,0 +1,115 @@
+body {
+        background: linear-gradient(68deg, rgb(131, 90, 143), rgb(150, 18, 64) );
+    }
+    h1{
+        font-style: inherit;
+        text-align: center;
+        font-size: 50px;
+        display: block;
+
+    }
+    h2{
+        display: block;
+        text-align: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    p{
+        text-align: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: medium;
+        margin-left: auto;
+        padding: 15px;
+
+    }
+    footer {
+      
+      text-align: center;
+      padding: 30px 20px;
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .Grid{
+        display:grid;
+        /* size: 202px; */
+        size: 300;
+        grid-template-columns: 25% 25% 25% 25%;
+        /* grid-gap: 10px;  */
+        padding: 10px;
+        border-radius: 20px;
+    }
+         
+    img{
+        width: 97%;
+        border-radius: 2px;
+    }
+    .container{
+        max-width: 100%;
+        margin:20px;
+        background: white;
+   
+    }
+    button{
+        display: block;
+        margin: 0 auto;
+        background: white;
+        font-size: 20px;
+        transition: all 150ms ease-in-out;
+        border-radius: 6px;
+
+    }
+    button:hover{
+        background: rgb(138, 90, 138);
+        cursor: pointer;
+        
+    }
+    .theme-button{
+        font-size: 18px;
+        background: black;
+        color: white;
+        padding: 5 8px;
+    }
+    .theme-button:hover{
+        color: black;
+        background: white;
+    }
+    .images:hover{
+        position: center ;
+        transform: scale(1.5);
+        /* transition: filter 150ms ease-in-out; */
+    }
+    .images{
+        border-radius: 10px;
+        margin: auto;
+        display: block;
+        /* transition: opacity 150ms ease-in-out; */
+    }
+    .DashBoard{
+        width: 97%;
+        display: block;
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin: auto;
+        border-radius: 10px;
+        transform: all 150ms ease-in-out;
+    }
+    .DashBoard:hover{
+        filter: contrast(80%);
+        transform:scale(1.1);
+    }
+    .linkedin{
+        margin-left: 20px;
+        font-size: large;
+        margin-bottom: 30px;
+        padding-bottom: 50px;
+        display: block;
+    }
+    .dark{
+        background: linear-gradient(68deg, rgb(78, 66, 82), rgb(68, 40, 50) );
+        color:white;
+    }
+    .dark .container{
+        background: rgb(36, 31, 31);
+    }
+    .dark a{
+        color: plum;
+    }
