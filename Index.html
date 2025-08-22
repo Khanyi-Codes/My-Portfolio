@@ -6,18 +6,25 @@
     <title> My Hobby-Programing</title>
     <style>
     body {
-        background-color: purple ;
+        background: linear-gradient(68deg, rgb(131, 90, 143), rgb(150, 18, 64) );
     }
     h1{
-           font-style: inherit;
-           text-align: center;
+        font-style: inherit;
+        text-align: center;
+        font-size: 50px;
 
     }
     h2{
-            text-align: center;
+        text-align: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
     }
     p{
         text-align: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: medium;
+        margin-left: auto;
+        padding: 15px;
+
     }
     footer {
       
@@ -37,7 +44,7 @@
     }
          
     img{
-        width: 90%;
+        width: 97%;
         border-radius: 2px;
     }
     .container{
@@ -72,18 +79,20 @@
     }
     .images:hover{
         position: center ;
-        transform: scale(1.2);
+        transform: scale(1.5);
         /* transition: filter 150ms ease-in-out; */
     }
     .images{
         border-radius: 10px;
+        margin: auto;
         /* transition: opacity 150ms ease-in-out; */
     }
     .DashBoard{
-        width: 85%;
+        width: 97%;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin: auto;
         border-radius: 10px;
         transform: all 150ms ease-in-out;
     }
@@ -93,6 +102,17 @@
     }
     .linkedin{
         margin-left: 20px;
+        font-size: large;
+    }
+    .dark{
+        background: linear-gradient(68deg, rgb(78, 66, 82), rgb(68, 40, 50) );
+        color:white;
+    }
+    .dark .container{
+        background: rgb(36, 31, 31);
+    }
+    .dark a{
+        color: plum;
     }
     </style>
     
@@ -102,9 +122,7 @@
     <div class = "container">
     <h1>Khanyisile Makhubu</h1>
     <h2> Tech Stack : Java, Python, Html, Css and Java Script</h2>
-    <p> 💻 I am a software engineering student passionate about buiding applications and exploring Cyber security
-
-    </p>
+    
     <a href="https://github.com/Khanyi-Codes" target = 'blank'>
         <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/DashBoard.png?raw=true" alt="DashBoard"  
         class = "DashBoard">
@@ -125,17 +143,27 @@
         <img src="https://github.com/Khanyi-Codes/My-Portfolio/blob/main/images/myCity.png?raw=true" alt = "MyCity" class = "images">
     </a>
     </div>
-     
+    <p>I started out as a teacher and that experience taught me how to be patient, adaptable, and creative in the way I explain things. 
+        Over time I discovered a passion for technology and the problem solving that comes with it, so I decided to pursue software engineering. 
+        Now I bring that same love of learning and sharing knowledge into my work as a developer. 
+        I enjoy figuring out how things work, creating solutions that feel intuitive, and collaborating with others to bring ideas to life.
+    </p> 
     <a href="https://www.linkedin.com/in/khanyisile-makhubu/" target = 'blank' class= "linkedin">Check out my Linkedin</a>
-    <button>Visit my Github <a href="https://github.com/Khanyi-Codes"></a></button>
+   
 
-    <footer>Coded by Khanyisile Makhubu <a href = "https://github.com/Khanyi-Codes"></a></footer>
+    <footer> 🌺Coded by Khanyisile Makhubu <a href = "https://github.com/Khanyi-Codes"></a></footer>
 </div>
 <script>
     function darkTheme(){
-        let theme = document.querySelector(".theme");
-        theme.classList.add("dark")
+        let body = document.querySelector("body");
+       if(body.classList.contains("dark")){
+        body.classList.remove("dark");
+       }else{
+        body.classList.add("dark");
+       }
     }
+    let themeButton = document.querySelector(".theme-button");
+    themeButton.addEventListener("click", darkTheme)
 
 </script>
 </body>
